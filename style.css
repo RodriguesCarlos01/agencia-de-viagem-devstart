@@ -1,0 +1,26 @@
+*{    
+    margin: 0;
+    padding: 0;
+    border: 0;      
+}
+
+.cabecalho{
+    text-align: center;
+    background-color: rgb(61, 152, 212);
+}
+
+.slogan{
+    width: 400px;
+    height: 300px;
+}
+.cabecalho-lista li{
+    color: #ffffff;
+    display: inline;
+    font-size: 18px;
+    padding: 30px;
+    margin: 10px 20px;
+}
+
+.cabecalho-link{
+    text-decoration: none;
+}
