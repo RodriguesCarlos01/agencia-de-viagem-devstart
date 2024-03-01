@@ -1,23 +1,67 @@
+:root{
+    --tituloEsubtitulo:rgb(97, 150, 211);
+    --paragrafos: #222121;
+}
+
 *{    
     margin: 0;
     padding: 0;
-    border: 0;      
+    border: 0; 
+    font-family: 'Tahoma';     
+}
+header{
+    text-align: center;
+}
+
+
+.header-titulo{
+    font-size: 28px;
+    color:var(--tituloEsubtitulo);
+    margin: 20px 0;
+}
+
+.header-subtitulo{
+    color: var(--tituloEsubtitulo);
+    margin-bottom: 10px;
+    font-weight: lighter;
 }
 
 .cabecalho{
     text-align: center;
-    background-color: rgb(61, 152, 212);
+    
 }
 
-.slogan{
-    width: 400px;
-    height: 350px;
+.img-banner{
+    width: 100%;
+    height: 600px;
+    
 }
 
 .cabecalho-link{
     text-decoration: none;
     font-size: 18px;
     padding: 5px 60px;
-    color: #ffffff;
+    color: var(--paragrafos);
 
 }
+
+.cabecalho-lista{
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+
+.sobre{
+    background-color: yellow;
+   align-items: center;
+    
+}
+.div-sobre{
+    width: 600px;
+    text-align: center;
+    background-color: pink;
+}
+
+
+    
+
