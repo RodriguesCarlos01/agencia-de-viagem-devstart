@@ -11,16 +11,13 @@
 
 .slogan{
     width: 400px;
-    height: 300px;
-}
-.cabecalho-lista li{
-    color: #ffffff;
-    display: inline;
-    font-size: 18px;
-    padding: 30px;
-    margin: 10px 20px;
+    height: 350px;
 }
 
 .cabecalho-link{
     text-decoration: none;
+    font-size: 18px;
+    padding: 5px 60px;
+    color: #ffffff;
+
 }
