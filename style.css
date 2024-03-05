@@ -1,67 +1,187 @@
 :root{
-    --tituloEsubtitulo:rgb(97, 150, 211);
-    --paragrafos: #222121;
+	--tituloEsubtitulo:rgb(97, 150, 211);
+	--paragrafos: #222121;
+	--pagina: #FAF0F6;
+	--divs:#E0FFFF;
+	background-color: var(--pagina);
 }
 
 *{    
-    margin: 0;
-    padding: 0;
-    border: 0; 
-    font-family: 'Tahoma';     
+	margin: 0;
+	padding: 0;
+	border: 0; 
+	font-family: 'Tahoma'; 					
 }
-header{
-    text-align: center;
-}
-
 
 .header-titulo{
-    font-size: 28px;
-    color:var(--tituloEsubtitulo);
-    margin: 20px 0;
+	padding-top: 100px;
+	font-size: 36px;
+	color: var(--divs);
 }
 
 .header-subtitulo{
-    color: var(--tituloEsubtitulo);
-    margin-bottom: 10px;
-    font-weight: lighter;
+	font-size: 34;
+	color: var(--divs);
+	padding-top: 10px;
+	font-weight: lighter;
 }
 
-.cabecalho{
-    text-align: center;
-    
+.secao-banner{
+	text-align: center;
 }
 
-.img-banner{
-    width: 100%;
-    height: 600px;
-    
+.banner{
+	min-height: 500px;
+	background-image: url('./img/procida-rec.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+			
+}
+
+.lista{
+	text-align: center;
 }
 
 .cabecalho-link{
-    text-decoration: none;
-    font-size: 18px;
-    padding: 5px 60px;
-    color: var(--paragrafos);
-
+	text-decoration: none;
+	font-size: 18px;
+	padding: 5px 60px;
+	color: var(--paragrafos);
 }
 
 .cabecalho-lista{
-    margin-top: 20px;
-    font-weight: 600;
-
+	margin: 20px 0;
+	font-weight: 600;
 }
 
-.sobre{
-    background-color: yellow;
-   align-items: center;
-    
-}
 .div-sobre{
-    width: 600px;
-    text-align: center;
-    background-color: pink;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	font-size: 18px;
+	width: 100%;
+	margin: 10px auto;
+	line-height: 40px;
+	background-color: var(--divs);
+	}
+
+.subtitulo-paragrafo{
+	font-size: 34px;
+	font-size: 22px;
+	color: #00CED1;
+}
+
+.div-sobre-paragrafo{
+	text-align: center;
+	width: 800px;
+	font-size: 18px;
+	margin: 0 60px ;
+}
+
+.slider{
+	margin: 0 auto;
+	width: 600px;
+	height: 450px;
+	overflow: hidden;			
+}
+
+.slides{
+	width: 400%;
+	height: 500px;
+	display: flex;
+	margin-right:100px ;
+}
+.slides input{
+	display: none;
+}
+
+.slide{
+	width: 25%;
+	position: relative;	
+}
+
+.slide img{
+	width: 300px;
+	
+}
+
+.manual-navigation{
+	position: absolute;
+	width: 500px;
+	margin-top: -70px;
+	display: flex;
+	justify-content: center;
+}
+
+.manual-btn{
+	border: 2px solid #E0FFFF;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.manual-btn:not(:last-child){ /**aqui ele da um espaço de 40 px na direita em todos os btn menos no ultimo filho( ultimo botão )**/
+	margin-right: 40px;
+}
+
+.manual-btn:hover{
+	background-color: #E0FFFF;
+}
+
+#radio1:checked ~ .first{
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+	margin-left: -25%;
+} 
+
+#radio3:checked ~ .first{
+	margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+	margin-left: -75%;
+}
+
+/** Essa parte é para  deixar os navegadores marcados**/
+.navigation-auto div{
+	border: 2px solid #20a6ff;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 1s;
+}
+
+.navigation-auto{
+	position: absolute;
+	width: 500px;
+	margin-top: 430px;
+	display:flex ;
+	justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+	margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background-color: #E0FFFF;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background-color: #E0FFFF;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background-color: #E0FFFF;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+	background-color: #E0FFFF;
 }
 
 
-    
 
