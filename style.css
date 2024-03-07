@@ -9,7 +9,7 @@
 *{    
 	margin: 0;
 	padding: 0;
-	border: 0; 
+	box-sizing: border-box; 
 	font-family: 'Tahoma'; 					
 }
 
@@ -263,4 +263,42 @@ span{
 	background-color: #20a6ff;
 	transition: 0.5s;
 }
+
+.rodape{
+	background-color: #222121;
+	text-align: center;
+	padding: 30px 0;
+}
+
+.rodape h3{
+	color: var(--divs);
+}
+
+.secao-rodape{
+	display: flex;
+	justify-content: space-around;
+	text-align: center;
+	width: 90%;
+}
+
+.contatos-rodape{
+	color: var(--divs);
+	width: 400px;
+	padding: 40px 0;
+}
+
+.contatos-rodape p{
+	padding: 5px 0;
+	font-weight: bold;
+}
+
+.lista-icon{
+	padding: 50px 0;
+	width: 200px;
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+
 
