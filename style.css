@@ -14,12 +14,14 @@
 }
 
 .header-titulo{
-	padding-top: 100px;
+	
+	padding-top: 50px;
 	font-size: 36px;
 	color: var(--divs);
 }
 
 .header-subtitulo{
+	
 	font-size: 34;
 	color: var(--divs);
 	padding-top: 10px;
@@ -34,9 +36,7 @@
 	min-height: 500px;
 	background-image: url('./img/procida-rec.jpg');
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-			
+	background-size: cover;		
 }
 
 .lista{
@@ -44,15 +44,23 @@
 }
 
 .cabecalho-link{
+	background-color: var(--divs);
+	border-radius: 20px;
 	text-decoration: none;
 	font-size: 18px;
-	padding: 5px 60px;
+	padding: 5px 50px;
+	transition: 0.5s;
 	color: var(--paragrafos);
 }
 
 .cabecalho-lista{
 	margin: 20px 0;
 	font-weight: 600;
+}
+
+.cabecalho-link:hover{
+	color: var(--divs);
+	background-color: #20a6ff;
 }
 
 .div-sobre{
@@ -67,8 +75,7 @@
 	}
 
 .subtitulo-paragrafo{
-	font-size: 34px;
-	font-size: 22px;
+	font-size: 30px;
 	color: #00CED1;
 }
 
@@ -182,6 +189,78 @@
 #radio4:checked ~ .navigation-auto .auto-btn4{
 	background-color: #E0FFFF;
 }
+li article{
+	font-size: 20px;
+	font-weight: bold;
+	margin: 10px 0;
+}
 
+.lista-titulo li{
+	font-size: 16px;
+	line-height: 24px;
+}
 
+span{
+	font-weight: bold;
+}
+
+.section-curiosidade{
+	background: var(--divs);
+}
+
+.secao-curiosidade{
+	margin: 10px auto;
+	width: 900px;
+	height: 560px;
+	text-align: center;
+}
+
+.foto-fundo-curiosidade{
+	height: 200px;
+	padding: 50px 0;
+	text-align: center;
+	background-image: url('/img/foto-fundo.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+}
+.section-nos-encontre{
+	background-color: var(--divs);
+}
+
+.nos-encontre{
+	margin: 10px;
+	text-align: center;
+}
+
+.lista-nos-encontre{
+	margin: 5px auto;
+	text-align: left;
+	line-height: 32px;
+	width: 900px;
+
+}
+
+.botao-div{
+	margin: 10px 0;
+	display: flex;
+	justify-content: end;
+}
+
+.botao-topo a{
+	font-weight: bold;
+	text-align: center;
+	padding: 4px 10px;
+	border-radius: 5px;
+	background-color: var(--divs);
+	color: black;
+	text-decoration: none;
+}
+
+.botao-topo a:hover{
+	color: white;
+	background-color: #20a6ff;
+	transition: 0.5s;
+}
 
