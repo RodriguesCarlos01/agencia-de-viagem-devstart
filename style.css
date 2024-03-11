@@ -1,5 +1,4 @@
 :root{
-	--tituloEsubtitulo:rgb(97, 150, 211);
 	--paragrafos: #222121;
 	--pagina: #FAF0F6;
 	--divs:#E0FFFF;
@@ -14,8 +13,7 @@
 }
 
 .header-titulo{
-	
-	padding-top: 50px;
+	padding-top: 10vh;
 	font-size: 36px;
 	color: var(--divs);
 }
@@ -24,7 +22,7 @@
 	
 	font-size: 34;
 	color: var(--divs);
-	padding-top: 10px;
+	padding-top: 2vh;
 	font-weight: lighter;
 }
 
@@ -33,7 +31,7 @@
 }
 
 .banner{
-	min-height: 500px;
+	height: 80vh;
 	background-image: url('./img/procida-rec.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;		
@@ -45,16 +43,16 @@
 
 .cabecalho-link{
 	background-color: var(--divs);
-	border-radius: 20px;
+	border-radius: 20vw;
 	text-decoration: none;
 	font-size: 18px;
-	padding: 5px 50px;
+	padding: 0.5vh 5vw;
 	transition: 0.5s;
 	color: var(--paragrafos);
 }
 
 .cabecalho-lista{
-	margin: 20px 0;
+	margin: 2vh 0;
 	font-weight: 600;
 }
 
@@ -67,23 +65,22 @@
 	display: flex;
 	align-items: center;
 	text-align: center;
-	font-size: 18px;
 	width: 100%;
-	margin: 10px auto;
-	line-height: 40px;
+	margin: 0.5vh auto;
+	line-height: 6vh;
 	background-color: var(--divs);
 	}
 
 .subtitulo-paragrafo{
-	font-size: 30px;
+	font-size: 2.5vw;
 	color: #00CED1;
 }
 
 .div-sobre-paragrafo{
 	text-align: center;
-	width: 800px;
+	width: 70vw;
 	font-size: 18px;
-	margin: 0 60px ;
+	margin: 0 3vw ;
 }
 
 .slider{
@@ -190,14 +187,14 @@
 	background-color: #E0FFFF;
 }
 li article{
-	font-size: 20px;
+	font-size: 1.5vw;
 	font-weight: bold;
-	margin: 10px 0;
+	margin: 1.5vh 0;
 }
 
 .lista-titulo li{
 	font-size: 16px;
-	line-height: 24px;
+	line-height: 4vh;
 }
 
 span{
@@ -209,15 +206,15 @@ span{
 }
 
 .secao-curiosidade{
-	margin: 10px auto;
-	width: 900px;
-	height: 560px;
+	margin: 1vh auto;
+	padding: 1vh 2vw;
+	width: 70vw;
+	height: 90vh;
 	text-align: center;
 }
 
 .foto-fundo-curiosidade{
-	height: 200px;
-	padding: 50px 0;
+	height: 40vh;
 	text-align: center;
 	background-image: url('/img/foto-fundo.jpg');
 	background-attachment: fixed;
@@ -230,20 +227,20 @@ span{
 }
 
 .nos-encontre{
-	margin: 10px;
+	margin: 0.5vh;
 	text-align: center;
 }
 
 .lista-nos-encontre{
-	margin: 5px auto;
+	margin: 5vw auto;
 	text-align: left;
-	line-height: 32px;
-	width: 900px;
+	line-height: 4vh;
+	width: 70vw;
 
 }
 
 .botao-div{
-	margin: 10px 0;
+	margin: 1vh 0;
 	display: flex;
 	justify-content: end;
 }
@@ -251,7 +248,7 @@ span{
 .botao-topo a{
 	font-weight: bold;
 	text-align: center;
-	padding: 4px 10px;
+	padding: 0.5vh 1vw;
 	border-radius: 5px;
 	background-color: var(--divs);
 	color: black;
@@ -267,7 +264,7 @@ span{
 .rodape{
 	background-color: #222121;
 	text-align: center;
-	padding: 30px 0;
+	padding: 3vh 0;
 }
 
 .rodape h3{
@@ -275,30 +272,49 @@ span{
 }
 
 .secao-rodape{
+	margin: auto;
 	display: flex;
 	justify-content: space-around;
 	text-align: center;
-	width: 90%;
+	width: 90vw;
 }
 
 .contatos-rodape{
 	color: var(--divs);
-	width: 400px;
-	padding: 40px 0;
+	width: 25vw;
+	padding: 5vh 0;
 }
 
 .contatos-rodape p{
-	padding: 5px 0;
+	padding: 1vh 0;
 	font-weight: bold;
 }
 
 .lista-icon{
-	padding: 50px 0;
-	width: 200px;
+	padding: 10vh 0;
+	width: 20vw;
 	display: flex;
 	justify-content: space-around;
 	list-style-type: none;
 }
 
 
+@media screen and (min-width: 350px) and (max-width: 1023px) {
+	.secao-curiosidade{
+		margin: 1vh auto;
+		padding: 1vh 2vw;
+		width: 70vw;
+		height: 90vh;
+		text-align: center;
+		overflow: auto scroll;
+	}
+
+	li article{
+		font-size: 3vw;
+	}
+
+	.subtitulo-paragrafo{
+		font-size: 4.5vw;
+	}
+}
 
